@@ -1,6 +1,6 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
+  
 
 <head>
     <meta charset="utf-8">
@@ -28,6 +28,8 @@
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
     <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="/js/autohidenav.js"></script>
+
 
 <style type="text/css" lang="css">
     #loading-container{
@@ -163,11 +165,17 @@
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="JiuHaohao's Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+  <style>
+    body{
+       background-image: url(https://xinzhuobu.com/wp-content/uploads/2023/03/20230328003.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
+ 
 
-
-
-
-
+  
  <div id="loading-container">
      <p class="loading-text">玩命加载中 . . . </p> 
      <div class="loading-image">
@@ -218,93 +226,6 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>时间树</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于我</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友人帐</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="" class="waves-effect waves-light">
-
-      
-      <i class="fas fa-list" style="zoom: 0.6;"></i>
-      
-      <span>休闲馆</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
-    </a>
-    <ul class="sub-nav menus_item_child ">
-      
-      <li>
-        <a href="/tools">
-          
-          <i class="fas fa-wrench" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>工具箱</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/movies">
-          
-          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>阿狸的影院</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/books">
-          
-          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>图书馆</span>
-        </a>
-      </li>
-      
-    </ul>
-    
-  </li>
-  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -350,95 +271,6 @@
 			
 			分类
 		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			时间树
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于我
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友人帐
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="javascript:;">
-			
-				<i class="fa-fw fas fa-list"></i>
-			
-			休闲馆
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
-		</a>
-            <ul  style="background:  ;" >
-              
-                <li>
-
-                  <a href="/tools " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-wrench" style="position: absolute;left:50px" ></i>
-			      
-		          <span>工具箱</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/movies " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
-			      
-		          <span>阿狸的影院</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/books " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
-			      
-		          <span>图书馆</span>
-                  </a>
-                </li>
-              
-            </ul>
           
         </li>
         
@@ -516,8 +348,7 @@
     </nav>
 
 </header>
-
-    <div class="bg-cover pd-header about-cover">
+ <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
@@ -780,363 +611,6 @@
                             </div>
                         </div>
                         
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card2">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="/" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">此处的更新</h1>
-                                            <p style="position: relative;top: -35px;">基本都是抖音上最新发现的影视作品，所以我可以大补特补的那种</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card3">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="http://tvax3.sinaimg.cn/large/006sgDP3gy1h3koki5rwyj307i0agjsq.jpg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">金装的维尔梅</h1>
-                                            <p style="position: relative;top: -35px;">咳咳，属于私人影片了</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="http://halihali3.com/acg/71364/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card4">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1844220520.webp" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">黑吃黑</h1>
-                                            <p style="position: relative;top: -35px;">祖国人作品</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.libvio.me/detail/5292.html" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card5">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="/" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">独行月球</h1>
-                                            <p style="position: relative;top: -35px;">沈腾主演</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            暂无资源
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card6">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2498635550.jpg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">欢迎来到实力至上主义学校</h1>
-                                            <p style="position: relative;top: -35px;">周三更新，路哥永远的神</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.libvio.me/play/101154-1-13.html" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            暂无资源
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card7">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="/" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">女神宿舍的宿管君第一季</h1>
-                                            <p style="position: relative;top: -35px;">少儿不宜，额...</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="http://halihali3.com/acg/65033/1.html" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card8">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2091221628.jpg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">了不起的盖茨比</h1>
-                                            <p style="position: relative;top: -35px;">小李子主演</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.libvio.me/detail/100499.html" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card9">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2874336418.jpg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">异世界叔叔</h1>
-                                            <p style="position: relative;top: -35px;">每周三更新</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.libvio.me/detail/101155.html" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card10">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="http://tvax3.sinaimg.cn/large/006sgDP3gy1h3ge37lis8j307i0avt9v.jpg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">engage kiss</h1>
-                                            <p style="position: relative;top: -35px;">基本都是抖音上最新发现的影视作品，所以我可以大补特补的那种</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="http://halihali3.com/acg/73916/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card1">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://xinzhuobu.com/wp-content/uploads/2022/06/20220625005.png" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">杜鹃的婚约</h1>
-                                            <p style="position: relative;top: -35px;">还是这种轻松一点有让人觉得很美好的，才会给人一种向往一点的感觉</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.libvio.me/detail/101028.html" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card2">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://w.wallhaven.cc/full/4l/wallhaven-4lx75q.png" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">海贼王</h1>
-                                            <p style="position: relative;top: -35px;">路飞成为海贼王的那一刻，我也会实现我的梦想</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.libvio.me/detail/6024.html" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card3">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://w.wallhaven.cc/full/4l/wallhaven-4lx75q.png" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">clannad</h1>
-                                            <p style="position: relative;top: -35px;">不过我还是更喜欢这种催泪和煽情的，还有哲理而深刻的，那种感人至深的影片，拍的人用心，看的人也共情，总能让我沉默不语的坚持很长一段日子，我很喜欢那种感觉</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.bilibili.com/bangumi/play/ss1177?spm_id_from=333.337.0.0" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card4">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://th.bing.com/th/id/OIP.UpPhCXw288eEm7tSz0lOqwHaEK?pid=ImgDet&rs=1" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">间谍过家家</h1>
-                                            <p style="position: relative;top: -35px;">全靠超级可爱的阿尼亚撑起来的哈哈哈</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.libvio.me/detail/100456.html" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            坐等第二季
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card5">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://w.wallhaven.cc/full/1k/wallhaven-1k32xg.jpg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">凡人修仙传</h1>
-                                            <p style="position: relative;top: -35px;">周日11点更新,国漫，我懒得扒图了,下次可以学学怎么扒B站视频封面的图</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.bilibili.com/bangumi/play/ep471908?from_spmid=666.25.episode.0" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card6">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://get.wallhere.com/photo/1920x1200-px-abstract-abstraction-ART-artistic-artwork-fantasy-original-psychedelic-1820791.jpg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">黑袍纠察队</h1>
-                                            <p style="position: relative;top: -35px;">每周五更新,美剧，还得是祖国人啊哈哈哈,很重口小朋友不要看</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.libvio.me/detail/100949.html" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card7">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://i0.hdslb.com/bfs/bangumi/image/521be9f21ee7dcf00eba4375b742f4a7dec2d51a.jpg@282w_375h.webp]" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">谎言</h1>
-                                            <p style="position: relative;top: -35px;">每周四更新,国漫，原来B站封面可以直接右键复制链接</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.bilibili.com/bangumi/play/ss39710/?spm_id_from=333.999.0.0" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            to enjoy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card8">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="/medias/loading.gif" data-original="https://tse3-mm.cn.bing.net/th/id/OIP-C.cz1pOXqBtN_61NnXs1uaQgHaHa?pid=ImgDet&rs=1" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">派对孔明</h1>
-                                            <p style="position: relative;top: -35px;">音乐超级好听,日漫，设定也很有意思,可以一起蹦迪的那种,没图床网上随便找了一张当封面,不然就可以用剧照了</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://www.libvio.me/detail/100435.html" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            坐等第二季
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
                     </div>
                     
                 </article>
@@ -1193,59 +667,7 @@
         });
     });
 </script>
-
-
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="7347214306"
-                   fixed='true'
-                   autoplay='true'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='1'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
+ <footer class="page-footer bg-color">
     
     <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
@@ -1260,7 +682,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.5k</span>&nbsp;字
+                class="white-color">478</span>&nbsp;字
             
             
             
@@ -1363,9 +785,7 @@
 </footer>
 
 <div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
+ <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
@@ -1468,8 +888,7 @@ $(function () {
     searchFunc('/search.xml', 'searchInput', 'searchResult');
 });
 </script>
-
-    <!-- 回到顶部按钮 -->
+ <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
         <i class="fas fa-arrow-up"></i>
@@ -1485,8 +904,7 @@ $(function () {
     <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
+ <!-- Baidu Push -->
 
 <script>
     (function () {
@@ -1501,29 +919,23 @@ $(function () {
         s.parentNode.insertBefore(bp, s);
     })();
 </script>
-
+ 
+    <script
+      src="/libs/others/clicklove.js"
+      async="async"
+    ></script>
+     
+    <script
+      async
+      src="/libs/others/busuanzi.pure.mini.js"
+    ></script>
+           
+    <script
+      src="/libs/instantpage/instantpage.js"
+      type="module"
+    ></script>
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-	
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
+    <!--
 <script type="text/javascript">
         //只在桌面版网页启用特效
         var windowWidth = $(window).width();
@@ -1531,21 +943,25 @@ $(function () {
             document.write('<script type="text/javascript" src="/js/snow.js"><\/script>');
         }
         </script>
-
-<script type="text/javascript">
-        //这个是动态标题，第一个是不在当前页的效果
-    var OriginTitile=document.title,st;
-    document.addEventListener("visibilitychange",function(){
-        document.hidden?(document.title="死如秋叶之静美❄",clearTimeout(st)):(document.title="生如夏花之绚烂❄",st=setTimeout(function(){document.title=OriginTitile},3e3))
-    })
-</script>
-
-<script>
+-->
+    <script type="text/javascript">
+      //这个是动态标题，第一个是不在当前页的效果
+      var OriginTitile = document.title,
+        st;
+      document.addEventListener("visibilitychange", function () {
+        document.hidden
+          ? ((document.title = "死如秋叶之静美❄"), clearTimeout(st))
+          : ((document.title = "生如夏花之绚烂❄"),
+            (st = setTimeout(function () {
+              document.title = OriginTitile;
+            }, 3e3)));
+      });
+    </script>
+  <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 preloadRatio: 1,
                 processImages: null,
             };
         </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=(n.imageLazyLoadSetting.preloadRatio,Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight+1080||document.documentElement.clientHeight+1080)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
-
 </html>
