@@ -37,7 +37,7 @@ body {
   background-color: #eaeaea;
   margin: 0;
   color: #34495e;
-  background: url("https://w.wallhaven.cc/full/e7/wallhaven-e7ek7k.jpg");
+  background: url("http://img.netbian.com/file/2023/0908/125419NTYw8.jpg");
   background-attachment: fixed;
 }
 
@@ -393,10 +393,10 @@ header .side-nav .social-link {
 }
 
 .cover-btns a:hover {
-  border: 1px solid #f44336;
-  background-color: #f44336;
-  box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42),
-    0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(233, 30, 99, 0.2);
+  border: 1px solid #483e47;
+  background-color: #483e47;
+  box-shadow: 0 14px 26px -12px rgba(130, 83, 3, 0.42),
+    0 4px 23px 0 rgba(120, 85, 3, 0.12), 0 8px 10px -5rgba (193, 98, 10, 0.2);
 }
 
 .cover-btns a i {
