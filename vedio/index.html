@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HLS.js Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  </head>
+
+  <style>
+    #video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* 使视频容器位于其他元素下方 */
+    }
+  </style>
+  <body>
+    <video id="video"></video>
+    <script>
+      if (Hls.isSupported()) {
+        const video = document.getElementById("video");
+        const hls = new Hls();
+        hls.loadSource(
+          "https://cdn.coverr.co/videos/coverr-a-woman-folds-a-christmas-card-and-puts-it-into-santa-s-mail-box-7935/1080p.mp4"
+        );
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, function () {
+          video.play();
+        });
+      }
+
+      hsl.configure({
+        autoplay: true, // 是否自动播放
+        controlType: "static", // 控制类型，这里设置为静态控制，即鼠标悬停时显示控制按钮
+        loop: true, // 是否循环播放
+        src: "path/to/your/video.mp4", // 视频文件路径，替换为你自己的视频文件路径
+        volume: 0.5, // 音量控制，可根据需要调整
+      });
+    </script>
+  </body>
+</html>
