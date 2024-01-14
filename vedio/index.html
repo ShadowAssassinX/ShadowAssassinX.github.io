@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>HLS.js Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <title>影剪Pro</title>
+    <!--效果很棒，有种镶金边的高级感哈哈哈-->
   </head>
-
   <style>
     #video-container {
       position: fixed;
@@ -15,29 +17,123 @@
       height: 100%;
       z-index: -1; /* 使视频容器位于其他元素下方 */
     }
-  </style>
-  <body>
-    <video id="video"></video>
-    <script>
-      if (Hls.isSupported()) {
-        const video = document.getElementById("video");
-        const hls = new Hls();
-        hls.loadSource(
-          "https://cdn.coverr.co/videos/coverr-a-woman-folds-a-christmas-card-and-puts-it-into-santa-s-mail-box-7935/1080p.mp4"
-        );
-        hls.attachMedia(video);
-        hls.on(Hls.Events.MANIFEST_PARSED, function () {
-          video.play();
-        });
-      }
+    /* 临时 */
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .shell {
+      height: 100vh;
+      overflow-x: hidden;
+      perspective: 3px;
+    }
+    .shell div {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-style: 30px;
+      letter-spacing: 2px;
+    }
+    .image {
+      transform: translateZ(-1px) scale(1.6);
+      background-size: cover;
+      height: 100vh;
+      z-index: -1;
+    }
+    .text {
+      height: 50vh;
+      background-color: #fff;
+    }
+    .text h1 {
+      color: #000;
+    }
+    .heading {
+      z-index: -1;
+      transform: translateY(-30vh) translateZ(1px);
+      color: #fff;
+      font-size: 30px;
+    }
+    /*按钮样式*/
+    button {
+      width: 150px;
+      height: 60px;
+      border: 3px solid #a3836e;
+      border-radius: 45px;
+      transition: all 0.3s;
+      cursor: pointer;
+      background: white;
+      font-size: 0.5em;
+      font-weight: 550;
+      font-family: "Montserrat", sans-serif;
+    }
 
-      hsl.configure({
-        autoplay: true, // 是否自动播放
-        controlType: "static", // 控制类型，这里设置为静态控制，即鼠标悬停时显示控制按钮
-        loop: true, // 是否循环播放
-        src: "path/to/your/video.mp4", // 视频文件路径，替换为你自己的视频文件路径
-        volume: 0.5, // 音量控制，可根据需要调整
-      });
-    </script>
+    button:hover {
+      background: #d38a3d;
+      color: white;
+      font-size: 0.8em;
+    }
+  </style>
+
+  <body>
+    <div class="shell">
+      <video id="video" class="image"></video>
+      <!--    <script>
+        if (Hls.isSupported()) {
+          const video = document.getElementById("video");
+          const hls = new Hls();
+          hls.loadSource(
+            "https://cdn.jsdelivr.net/gh/moezx/hls@1.0.0/src/westlife.hello.my.love.m3u8"
+          );
+          hls.attachMedia(video);
+          hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            video.play();
+          });
+        }
+
+        hsl.configure({
+          autoplay: true, // 是否自动播放
+          controlType: "static", // 控制类型，这里设置为静态控制，即鼠标悬停时显示控制按钮
+          loop: true, // 是否循环播放
+          src: "path/to/your/video.mp4", // 视频文件路径，替换为你自己的视频文件路径
+          volume: 0.5, // 音量控制，可根据需要调整
+        });
+      </script>       -->
+      <div class="image" style="background-image: url('./1.jpg')"></div>
+      <div class="heading">
+        <h1>When you are confused</h1>
+      </div>
+      <div class="text">
+        <h1>Set goals in your mind</h1>
+      </div>
+
+      <div class="image" style="background-image: url('./2.jpg')"></div>
+      <div class="heading">
+        <h1>When you're down</h1>
+      </div>
+      <div class="text">
+        <h1>Try to wake up the beast in your heart</h1>
+      </div>
+
+      <div class="image" style="background-image: url('./3.jpg')"></div>
+      <div class="heading">
+        <h1>When prople leave you</h1>
+      </div>
+      <div class="text">
+        <h1>It's time to start your season</h1>
+      </div>
+
+      <div class="image" style="background-image: url('./4.jpg')"></div>
+      <div class="heading">
+        <h1>Come on,stranger.</h1>
+      </div>
+      <div class="heading">
+        <a href="https://shadowassassinx.github.io">
+          <button>了解更多</button>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
+<!--像这样直接写html作为自定义页面，需要跳过渲染（笔记里有说），
+这是因为渲染的话就会变成特定的网页布局，导航栏之类的，但是和html的内容冲突，所以会显示找不到文件https://www.cnblogs.com/lmzq/p/17140535.html-->
